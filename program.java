@@ -1,6 +1,6 @@
 import java.io.*;
-class myClass{
+class program{
     public static void main(String arg[]){
-        System.out.println("This is my first program");
+        System.out.println("My name is Mr. Joe");
     }
 }
