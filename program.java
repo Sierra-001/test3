@@ -6,6 +6,6 @@ class program{
         System.out.println(" : Cross Road");
         System.out.println(" : Mauritius");
         System.out.println("Phone : 56745787");
-        System.out.println("Email : zz@mail.com");
+        System.out.println("Email : hema@gmail.com");
     }
 }
