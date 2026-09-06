@@ -7,6 +7,8 @@ class program {
         Cylinder();
         Rectangle();
         RightAngleTriangle();
+        Sphere();
+
     }
     static void Cylinder() {
 
@@ -69,7 +71,7 @@ class program {
         System.out.println("Perimeter = " + perimeter);
         System.out.println("Area = " + area);
     }
-    static void CuboidCalculator(){
+    static void CuboidCalculator() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter length");
         double length = input.nextDouble();
@@ -78,11 +80,31 @@ class program {
         System.out.print("Enter height");
         double height = input.nextDouble();
         double volume = length * width * height;
-        double surfaceArea = 2*((length*width)+(length*height)+(width*height));
+        double surfaceArea = 2 * ((length * width) + (length * height) + (width * height));
 
         System.out.printf("Volume: %.2f cubic units\n", volume);
         System.out.printf("Total Surface Area: %.2f square units\n", surfaceArea);
         input.close();
+    }
+
+
+                public static void  Sphere(){
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.print("Enter radius: ");
+                double radius = scanner.nextDouble();
+
+                double volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+                double surfaceArea = 4 * Math.PI * Math.pow(radius, 2);
+
+                System.out.println("\n=== Sphere Calculations ===");
+                System.out.printf("Radius: %.2f%n", radius);
+                System.out.printf("Volume: %.4f cubic units%n", volume);
+                System.out.printf("Total Surface Area: %.4f square units%n", surfaceArea);
+
+                scanner.close();
+
+
 
     }
 }
