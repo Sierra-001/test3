@@ -1,4 +1,5 @@
 import java.io.*;
+<<<<<<< HEAD
 class program {
     public static void main(String args[] ) {
         int arr[] = new int[10];
@@ -26,5 +27,15 @@ class program {
         System.out.println("Element at Index 8: " + arr[8]);
         System.out.println("Element at Index 9: " + arr[9]);
 //System.out.println("Element at Index 10: " + arr[10]);
+=======
+class program{
+    public static void main(String arg[]){
+        System.out.println("Name : Mr. My Name");
+        System.out.println("Address : Phoenix Lane");
+        System.out.println(" : Cross Road");
+        System.out.println(" : Mauritius");
+        System.out.println("Phone : 56745787");
+        System.out.println("Email : hema@gmail.com");
+>>>>>>> 8ba916c507da4d1223ea343e1e4a2cf975b82bfa
     }
 }
