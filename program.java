@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 class program {
     public static void main (String[] args) {
+        CuboidCalculator();
         Cylinder();
         Rectangle();
         RightAngleTriangle();
@@ -67,5 +68,21 @@ class program {
         System.out.println("Hypotenuse = " + hypotenuse);
         System.out.println("Perimeter = " + perimeter);
         System.out.println("Area = " + area);
+    }
+    static void CuboidCalculator(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter length");
+        double length = input.nextDouble();
+        System.out.print("Enter width");
+        double width = input.nextDouble();
+        System.out.print("Enter height");
+        double height = input.nextDouble();
+        double volume = length * width * height;
+        double surfaceArea = 2*((length*width)+(length*height)+(width*height));
+
+        System.out.printf("Volume: %.2f cubic units\n", volume);
+        System.out.printf("Total Surface Area: %.2f square units\n", surfaceArea);
+        input.close();
+
     }
 }
