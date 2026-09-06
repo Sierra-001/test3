@@ -5,7 +5,11 @@ import java.io.*;
 import java.util.Scanner;
 
 class program {
-    public static void main(String[] args ) {
+    public static void main (String[] args) {
+        Cylinder();
+        Rectangle();
+    }
+    static void Cylinder() {
 
         double r, h, v, tsa;
         Scanner input = new Scanner(System.in);
@@ -30,8 +34,9 @@ class program {
 
     static double calculateV (double r, double h) {
         return (Math.PI * Math.pow(r, 2) * h);
-public class Rectangle {
-    public static void main(String[] args) {
+    }
+
+    static void Rectangle () {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the length: ");
